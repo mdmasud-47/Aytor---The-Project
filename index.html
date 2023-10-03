@@ -155,14 +155,61 @@
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                     <li>
-                        <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></button>
                         <span>4</span>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Right Toggle canvas start -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+         <div class="offcanvas-header">
+             <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+             <div class="d-flex item">
+             <img src="./assests/images/right_img_1.webp" alt="">
+             <ul>
+                <li><a href="#">Jacket Hoddie</a> </li>
+                <li class="item_cost">1 × $40.00</li>
+             </ul>
+             <i class="fa-regular fa-trash-can"></i>
+         </div>
+         <div class="d-flex item">
+            <img src="./assests/images/right_img_2.webp" alt="">
+            <ul>
+                <li><a href="#">Sports Shoes</a> </li>
+                <li class="item_cost">1 × $99.00</li>
+            </ul>
+            <i class="fa-regular fa-trash-can" style="margin-left: 168px;"></i>
+         </div>
+         <div class="d-flex item">
+            <img src="./assests/images/right_img_3.webp" alt="">
+            <ul>
+                <li><a href="#">Smart Watch</a> </li>
+                <li class="item_cost">1 × $56.00</li>
+            </ul>
+            <i class="fa-regular fa-trash-can" style="margin-left: 167px;"></i>
+         </div>
+         <div class="d-flex item">
+            <img src="./assests/images/right_img_4.webp" alt="">
+            <ul>
+                <li><a href="#">Bluetooth Speaker</a> </li>
+                <li class="item_cost">1 × $23.00</li>
+            </ul>
+            <i class="fa-regular fa-trash-can" style="margin-left: 130px;"></i>
+         </div>
+         <p><strong>Subtotal:</strong> <span>$318.00</span></p>
+         <div class="button">
+            <button><a href="#">View Cart</a></button>
+            <button><a href="#">Checkout</a></button>
+         </div>
+         </div>
+    </div>
+    <!-- Right Toggle canvas start -->
     <!-- popup-search-box start-->
     <div class="popup-search-box">
         <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
@@ -181,7 +228,7 @@
                     <div>
                         <h5>Mega Sale</h5>
                     <h1>Up To 35% Off</h1>
-                    <p>Objectively incubate enabled innovation through leveraged<br> mindshare. Competently.</p>
+                    <p class="col-lg-9">Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
                     <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -191,7 +238,7 @@
                     <div>
                         <h5>Mega Sale</h5>
                     <h1>Up To 35% Off</h1>
-                    <p>Objectively incubate enabled innovation through leveraged<br> mindshare. Competently.</p>
+                    <p class="col-lg-12">Objectively incubate enabled innovation through leveraged<br> mindshare. Competently.</p>
                     <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -201,7 +248,7 @@
                     <div>
                         <h5>Mega Sale</h5>
                     <h1>Up To 35% Off</h1>
-                    <p>Objectively incubate enabled innovation through leveraged<br> mindshare. Competently.</p>
+                    <p class="col-lg-12">Objectively incubate enabled innovation through leveraged<br> mindshare. Competently.</p>
                     <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
@@ -211,48 +258,55 @@
     <!--Banner section ended-->
     <!--Feature Category section start-->
     <section id="feature">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="feature_item">
-                    <img src="./assests/images/Feature Category/feature_bg_1.png" alt="">
-                    <div class="overlay">
-                        <h3>Beauty Cream</h3>
-                        <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="cream-img-1">
+                        <img src="./assests/images/Feature Category/feature_bg_1.png" alt="">
+                        <div class="overlay-beauty-cream">
+                            <h3>Beauty Cream</h3>
+                            <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="cream-img-2">
+                        <img src="./assests/images/Feature Category/feature_bg_2.png" alt="">
+                        <div class="overlay-beauty-cream">
+                            <h3>Natural Cream</h3>
+                            <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="feature_item">
-                    <img src="./assests/images/Feature Category/feature_bg_2.png" alt="">
-                    <div class="overlay">
-                        <h3>Beauty Cream</h3>
-                        <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="col-lg-7">
+                    <div class="cream-img-3">
+                        <img src="./assests/images/Feature Category/feature_bg_3.png" alt="">
+                        <div class="overlay-beauty-cream">
+                            <h3>Face Cream</h3>
+                            <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
-                <div class="feature_item">
-                    <img src="./assests/images/Feature Category/feature_bg_3.png" alt="">
-                <div class="overlay">
-                    <h3>Natural Cream</h3>
-                    <a href="#">Shop Now<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <!--feature Category section ended-->
     <!--Best spa section start-->
-    <section id="best_spa">
-        <div class="item" style="background-image: url(./assests/images/best_spa_bg.png);">
-            <div class="container">
-                <h2>Get Up To 35% Off all Best Spa Cosmetics</h2>
-                <p>Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
-                
-            </div>
+    <div id="best_spa">
+        <div class="item mega-hover2" style="background-image: url(./assests/images/best_spa_bg.png);">
+           <div class="container">
+            <h1 class="col-lg-4">Get Up To 35% Off all Best Spa Cosmetics</h1>
+            <p class="col-lg-4">Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
+            <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+           </div>
+        </div>
+    </div>
+    <!--Best spa section ended-->
+    <!--Footer section start-->
+    <section id="footer">
+        <div class="footer_wrapper" style="background-image: url(./assests/images/Footer/footer_bg.webp);height: 609px; background-size: cover; background-position: center;">
+
         </div>
     </section>
-    <!--Best spa section ended-->
+    <!--Footer section ended-->
 
 
 
