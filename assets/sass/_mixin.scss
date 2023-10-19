@@ -1,0 +1,184 @@
+/* =========== Product Mixin Start =========== */
+@mixin product(){
+    position: relative;
+    text-align: center;
+    border: 1px solid $bg-color-dark;
+    overflow: hidden;
+    .product_img{
+        position: relative;
+
+
+        img:last-child{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s;
+        }
+    }
+    &:hover .product_img img:last-child{
+        visibility: visible;
+        opacity: 1;
+    }
+    .product_info{
+        padding: 25px 0;
+        h6{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px; 
+            font-family: $primary-font; 
+            margin-bottom: 5px;
+            ins{
+                color: $paragraph-color;
+                text-decoration: none;
+            }
+            del{
+                color: #bdbdbd;  
+            }
+        }
+        h5{
+            color: $text-color;
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;     
+            margin-bottom: 11px ;
+            transition: .4s;
+        }
+        &:hover h5{
+            color: $primary-color;
+        }
+        ul{
+            justify-content: center;
+            li i{
+                color: $primary-color;
+            }
+        }
+    }
+    .product_action {
+        position: absolute;
+        top: 44px;
+        right: -50px;
+        transition: .6s;
+        ul li{
+            margin-bottom: 10px;
+            button{
+                width: 36px;
+                height: 36px;
+                background-color: $light-color;
+                color: $primary-color-3d;
+                border: none;
+                border-radius: 50%;
+                box-shadow: $shadow-10;
+                transition: .4s;
+            }
+            &:hover button{
+                background-color: $primary-color;
+                color: $light-color;
+            }
+        }
+    }
+    &:hover .product_action{
+        right: 17px;
+    }
+    .product_badge{
+        color: $light-color;
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; 
+        background-color: $primary-color;
+        transform: rotate(-90deg);
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 24px;
+        margin-top: 8px;
+        padding: 0 8px 0 12px ;
+        border-radius: 13px 0  0 13px ;
+    }
+        
+}
+
+
+/* =========== Product Mixin Ended =========== */
+// @mixin deals(){
+//     .deals_slider{
+//         width: 1320px;
+//         height: 646px;
+//         background: #CACACA;
+//         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
+//     }
+    
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== Extra Extra Large Device Start =========== */
+@mixin xxl() {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}
+/* =========== Extra Extra Large Device End =========== */
+
+/* =========== Extra Large Device Start =========== */
+@mixin xl() {
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        @content;
+    }
+}
+/* =========== Extra Large Device End =========== */
+
+/* =========== Large Device Start =========== */
+@mixin lg() {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        @content;
+    }
+}
+/* =========== Large Device End =========== */
+
+/* =========== Medium Device Start =========== */
+@mixin md() {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+/* =========== Medium Device End =========== */
+
+/* =========== Small Device Start =========== */
+@mixin sm() {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @content;
+    }
+}
+/* =========== Small Device End =========== */
+
+/* =========== Extra Small Device Start =========== */
+@mixin xs() {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+/* =========== Extra Small Device End =========== */
+
+/* =========== Custom Device Start =========== */
+@mixin custom($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+/* =========== Custom Device End =========== */
