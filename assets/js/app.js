@@ -50,6 +50,22 @@ $(function() {
         dots: true,
         slidesToShow:4,
     })
+
+    // BackToTop Button
+    $(window).on('scroll',function() {
+        let scrollTop = $(window).scrollTop();
+
+        if(scrollTop > 600){
+             $('#backToTop').fadeIn(500);
+        }else{
+            $('#backToTop').fadeOut(500);
+        }
+    })
+    $("#backToTop").on('click',function(){
+        $('html, body').animate({
+            scrollTop:0
+        }, 200)
+    })
     
 });
 // Activate Tooltips

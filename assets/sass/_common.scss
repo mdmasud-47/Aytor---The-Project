@@ -502,3 +502,25 @@ footer .footer_lower .widget.widget-8 button {
 
 /* =========== Copyright Section Css End =========== */
 /* =========== Footer Css End =========== */
+/* =========== Back To Top Button Css Start =========== */
+#backToTop{
+    width: 60px;
+    height: 60px;
+    line-height: 52px;
+    border: none;
+    background-color: $primary-color;
+    color: $light-color;
+    border-radius: 50%;
+    border: 5px solid $light-color;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 55px;
+    bottom: 40px;
+    display: none;
+}
+
+
+
+/* =========== Back To Top Button Css End =========== */
