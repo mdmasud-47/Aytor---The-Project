@@ -1,0 +1,217 @@
+/* ===========  About Us Scss Start=========== */
+#about_us{
+    @include page_heading();   
+}
+/* ===========  About Us Scss Ended=========== */
+/* ===========  Sale Scss Start=========== */
+ #sale{
+    margin: 100px 0;
+    .sale_box{
+        .sale_img{
+            background-color: $primary-color;
+            opacity: 0.9;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            
+        }
+        .sale_info{
+            h3{
+                color: $primary-color;
+                text-align: center;
+                font-family: $primary-font;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 46px; 
+            }
+            p{
+                color: $paragraph-color;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+ }
+/* ===========  Sale Scss Ended=========== */
+/* ===========  Shiping Scss Start=========== */
+ #shiping{
+    margin-bottom: 100px;
+    height: 100px;
+    .box{
+        span{
+            border-right: 4px solid $bg-color-light;
+        }
+        .icon{
+            margin-top: 15px;
+            background-color: $primary-color;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .info{
+            margin-top: 24px;
+            margin-right: 40px;
+            h5{
+                color: $text-color;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px; 
+            }
+            p{
+                color: $paragraph-color;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+                span{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+ }
+/* ===========  Shiping Scss Ended=========== */
+/* ===========  Team Scss Start=========== */
+ #team{
+    .team_slider{
+        .team_slider_arrow{
+            width: 34px;
+            height: 34px;
+            border: none;
+            border: 2px solid rgba(130, 130, 130, 1);
+            line-height: 34px;
+            text-align: center;
+            border-radius: 50%;
+            fill: $text-color;
+            opacity: 0.5;
+            cursor: pointer;
+            position: absolute;
+            z-index: 99;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: .5s;
+            &.fa-caret-left{
+                left: -16px;
+            }
+            &.fa-caret-right{
+                right: -16px;
+            }
+            &:hover{
+                background-color: $primary-color;
+                border: transparent;
+                color: $light-color;
+            }
+        }
+        .team_box{
+            box-shadow: 0px 5px 30px 0px rgba(17, 22, 30, 0.08);
+            .team_info{
+                h5{
+                    color: $text-color;
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 30px; 
+                    margin-top: 18px;
+                }
+                p{
+                    color: $primary-color;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    margin-top: 6px;
+                }
+                ul {
+                    margin:10px 0 20px 110px;
+
+                    li a{
+                        color: $paragraph-color;
+                        margin-right: 10px;
+                        transition: .4s;
+                    }
+                    &:hover a{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+ }
+/* ===========  Team Scss Ended=========== */
+/* =========== Instagram Scss Start=========== */
+ #instagram{
+    margin: 100px 0 55px 0;
+    .insta_slider{
+        .insta_box{
+            .insta_img{   
+            position: relative;
+            display: inline-block;
+            }
+            .insta_icon{
+                position: absolute;
+                background-color: $primary-color-3d;
+                opacity: .6;
+                inset: 0;
+                text-align: center;
+                visibility: hidden;
+                
+                i{
+                    margin: 80px;
+                    color: $light-color;
+                    font-size: 35px;
+                    transition: .4s;
+                    cursor: pointer;
+                }
+                &:hover i{
+                    color: $primary-color;
+                }
+            }
+            &:hover .insta_icon{
+                visibility: visible;
+            }
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+            li {
+                line-height: 0;
+                margin-right: 5px;
+                
+                button{
+                    font-size: 0;
+                    border: none;
+                    background:  #BDBDBD;
+                    width: 10px;
+                    height: 6px;
+                    border-radius: 5px;
+                    transition: .6s;
+                }
+                &.slick-active button{
+                    width: 26px;
+                    background-color: $primary-color;
+                 }
+            
+            }
+        }
+    }
+ }
+/* =========== Instagram Scss Ended=========== */

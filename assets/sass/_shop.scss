@@ -1,0 +1,84 @@
+/* ===========  shop Scss Start=========== */
+ #shop{
+    @include page_heading();
+ }
+/* ===========  shop Scss Ended=========== */
+/* ===========  Products Scss Start=========== */
+ #products{
+   margin-top: 100px;
+      .products_box{
+         position: relative;
+         overflow: hidden;
+         margin-bottom: 40px;
+         .products_info{
+            div{
+               margin-top: 20px;
+               h6{
+                  color: $text-color ;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 28px;
+                  transition: .4s;
+               }
+               &:hover h6{
+                  color: $primary-color;
+               }
+               ul li i{
+                  color: $primary-color;
+                  font-size: 10px;
+               }
+            }
+            p{
+               color: $paragraph-color;
+               font-family: $primary-font;
+               font-size: 16px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 26px; 
+               margin-top: 10px;
+            }
+         }
+         .products_action {
+            position: absolute;
+            top: 44px;
+            right: -50px;
+            z-index: 99;
+            transition: .6s;
+            ul li{
+                margin-bottom: 10px;
+                button{
+                    width: 36px;
+                    height: 36px;
+                    background-color: $primary-color-3d;
+                    color: $light-color ;
+                    border: none;
+                    border-radius: 50%;
+                    box-shadow: $shadow-10;
+                    transition: .4s;
+                }
+                &:hover button{
+                    background-color: $primary-color;
+                    color: $light-color;
+                }
+            }
+        }
+        &:hover .products_action{
+         right: 17px;
+        }
+        .products_badge{
+         span{
+            display: inline-block;
+            width: 80px;
+            height: 26px;
+            background-color: $primary-color;
+            color: $light-color;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 12px;
+         }
+        }
+      }
+ }
+/* ===========  Products Scss Ended=========== */

@@ -7,7 +7,7 @@
     <meta name="title" content="">
     <meta name="discription" content="">
     <meta name="keywords" content="">
-    <title>Aytor - Home</title>
+    <title>Aytor - About</title>
     <link rel="canonical" href="">
      <!-- Favicon css link -->
      <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-icon-180x180.png">
@@ -66,7 +66,6 @@
     </div>
     </section>
     <!--Top Bar section ended-->
-
     <!--Nav section start-->
     <nav id="primary_nav" class="navbar navbar-expand-lg">
         <div class="container">
@@ -87,12 +86,12 @@
                 </div>
                 <div class="offcanvas-body">
                   <ul class="manu_name">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./about.html">About</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./blogs.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                   </ul>
                   <ul class="item_name">
                     <li class="item_name_2"><a href="#"><i class="fa-regular fa-user"></i>Login / Register</a></li>
@@ -139,9 +138,9 @@
             </button>
             <div class="collapse navbar-collapse " id="main_menu">
                 <ul class="navbar-nav mx-auto">
-                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a  href="./index.html">Home</a></li>
                     <li><a href="./shop.html">Shop</a></li>
-                    <li><a href="#">Pages</a></li>
+                    <li><a class="active" href="./about.html">About</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="./blogs.html">Blogs</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -151,15 +150,14 @@
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                     <li>
-                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></button>
-                        <span>4</span>
+                        <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i><span>4</span></button>
+                        
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Right Toggle canvas start -->
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
          <div class="offcanvas-header">
              <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
@@ -205,7 +203,7 @@
          </div>
          </div>
     </div>
-    <!-- Right Toggle canvas start -->
+    <!-- Right Toggle canvas Ended -->
     <!-- popup-search-box start-->
     <div class="popup-search-box">
         <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
@@ -216,6 +214,271 @@
     </div>
     <!-- popup-search-box ended-->
     <!--Nav section ended-->
+
+
+    <!--About US section start-->
+    <section id="about_us">
+        <div class="container h-100 d-flex align-items-center flex-column ">
+            <h2>About Us</h2>
+            <p>Home  /  About Us</p>
+        </div>
+    </section>
+    <!--About US section ended-->
+    <!--Sale section start-->
+    <section id="sale">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 sale_box">
+                    <div class="sale_img ">
+                        <img src="./assets/images/Sale/Sale_img_4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sale_info">
+                        <h3>22.3k</h3>
+                        <p>Products for sale</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sale_box">
+                    <div class="sale_img">
+                        <img src="./assets/images/Sale/Sale_img_2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sale_info">
+                        <h3>14.6k</h3>
+                        <p>Sellers active on shop</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sale_box">
+                    <div class="sale_img">
+                        <img src="./assets/images/Sale/Sale_img_3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sale_info">
+                        <h3>75.9k</h3>
+                        <p>Customer active on store</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sale_box">
+                    <div class="sale_img">
+                        <img src="./assets/images/Sale/Sale_img_1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="sale_info">
+                        <h3>35.5k</h3>
+                        <p>Annual gross sales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!--Sale section ended-->
+     <!--Shiping section start-->
+     <section id="shiping">
+        <div class="container h-100">
+            <div class="row h-100">
+                    <div class=" box col-lg-3 d-flex ">
+                        <div class="icon">
+                            <img src="./assets/images/Footer/delivery-truck .png" alt="" class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h5>FREE SHIPING</h5>
+                            <p>all orders over <span>$150</span></p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class=" box col-lg-3 d-flex">
+                        <div class="icon">
+                            <img src="./assets/images/Footer/credit-cards .png" alt=""  class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h5>QUICK PAYMENT</h5>
+                            <p>100% secure payment</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class=" box col-lg-3 d-flex">
+                        <div class="icon">
+                            <img src="./assets/images/Footer/exchange .png" alt="" class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h5>FREE RETURNS</h5>
+                            <p>Return money within 30 days</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class=" box col-lg-3 d-flex">
+                        <div class="icon">
+                            <img src="./assets/images/Footer/customer-service .png" alt="" class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h4>24/7 SUPPORT</h4>
+                            <p>Quick Support</p>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+     </section>
+     <!--Shiping section ended-->
+     <!--Team section start-->
+     <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section_heading">
+                    <h2>Leadership Expart Team</h2>
+                </div>
+            </div>
+            <div class=" team_slider">
+                <div class="team_box mx-2">
+                    <div class="team_img">
+                        <img src="./assets/images/Team/team_1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="team_info">
+                        <h5>Michel Richard</h5>
+                        <p>Founder</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team_box mx-2">
+                    <div class="team_img">
+                        <img src="./assets/images/Team/team_2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="team_info">
+                        <h5>Michel Richard</h5>
+                        <p>Founder</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team_box mx-2">
+                    <div class="team_img">
+                        <img src="./assets/images/Team/team_3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="team_info">
+                        <h5>Michel Richard</h5>
+                        <p>Founder</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team_box mx-2">
+                    <div class="team_img">
+                        <img src="./assets/images/Team/team_4.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="team_info">
+                        <h5>Michel Richard</h5>
+                        <p>Founder</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team_box mx-2">
+                    <div class="team_img">
+                        <img src="./assets/images/Team/team_5.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="team_info">
+                        <h5>Michel Richard</h5>
+                        <p>Founder</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!--Team section ended-->
+     <!-- Instagram section start-->
+     <section id="instagram">
+        <div class="container">
+            <div class="row section_heading">
+                <h2>@Aetor Instagram</h2>
+            </div>
+            <div class=" insta_slider">
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_1.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_2.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_3.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_4.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_5.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_6.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_7.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class=" insta_box">
+                    <div class="insta_img">
+                        <img src="./assets/images/Instagram/insta_8.jpg" alt="" class="img-fluid">
+                        <div class="insta_icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Instagram section ended-->
 
 
 
@@ -332,7 +595,6 @@
         </section>
         <!-- =========== Copyright Section End =========== -->
     </footer>
-    
     <!--Footer section ended-->
     
     <!--jquery javascript link-->

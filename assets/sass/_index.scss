@@ -1,20 +1,23 @@
-
-
-
-
-
-
-
 /* =========== Banner Css Start=========== */
 #banner .banner_slider_item{
     height: 800px;
     background-size: cover !important;
     background-position: center !important;
-}
-#banner .banner_slider_item_1{
-    height: 800px;
-    background-size: cover !important;
-    background-position: center !important;
+    @include xl (){
+        height: 545px;
+    }
+    @include lg() {
+        height: 451px;
+    }
+    @include md (){
+        height: 349px;
+    }
+    @include sm (){
+        height: 262px;
+    }
+    @include xs(){
+        height: 261px;
+    }
 }
 #banner .banner_slider .banner_slider_item .container div h5{
     color: #1D1D1D;
@@ -22,14 +25,14 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
+    @include sm(){
+        display: none;
+    }
+    @include xs(){
+        display: none;
+    }
 }
-#banner .banner_slider .banner_slider_item_1 .container div h5{
-    color:$light-color;
-    font-family: $primary-font;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-}
+
 #banner .banner_slider .banner_slider_item .container div h1{
     color: #1D1D1D;
     font-family: $primary-font;
@@ -37,14 +40,18 @@
     font-weight: 700;
     line-height: 74px;
     margin: 14px 0px 16px 0px; 
-}
-#banner .banner_slider .banner_slider_item_1 .container div h1{
-    color:$light-color;
-    font-family: $primary-font;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 74px;
-    margin: 14px 0px 16px 0px; 
+    @include lg{
+        font-size: 45px;
+    }
+    @include md(){
+        font-size: 34px;
+    }
+    @include sm(){
+        font-size: 37px;
+    }
+    @include xs(){
+        font-size: 37px;
+    }
 }
 #banner .banner_slider .banner_slider_item .container div p{
     color: #1D1D1D;
@@ -53,14 +60,15 @@
     font-weight: 400;
     line-height: 28px;
     margin-bottom: 29px;
-}
-#banner .banner_slider .banner_slider_item_1 .container div p{
-    color:$light-color;
-    font-family: $body-font;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 29px;
+    @include md(){
+        font-size: 13px;
+    }
+    @include sm(){
+        display: none;
+    }
+    @include xs(){
+        display: none;
+    }
 }
 #banner .banner_slider .banner_slider_item .container div a{
     color:$light-color;
@@ -73,6 +81,12 @@
     padding: 13px 37px;
     cursor: pointer;
     transition: .4s;
+    @include sm(){
+        margin-bottom: 30px;
+    }
+    @include xs(){
+        margin-bottom: 30px;
+    }
 }
 #banner .banner_slider .banner_slider_item .container div a:hover{
     background-color:$light-color;
@@ -83,18 +97,6 @@
 }
 #banner .banner_slider .banner_slider_item_1 .container div a i{
     margin-left: 11px;
-}
-#banner .banner_slider .banner_slider_item_1 .container div a{
-    color:$light-color;
-    text-align: center;
-    font-family: $primary-font;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 30px;
-    background-color: $primary-color;
-    padding: 13px 37px;
-    cursor: pointer;
-    transition: .4s;
 }
 #banner .banner_slider .banner_slider_item_1 .container div a:hover{
     background-color:$light-color;
@@ -113,11 +115,37 @@
     width: 26px;
     background-color: $primary-color;
 }
+#banner .banner_slider .banner_slider_item .container div{
+    position: relative;
+}
 #banner .banner_slider .slick-dots{
     display: flex;
     position: absolute;
-    left: 113px;
+    left: 632px;
     bottom: 28%;
+    @include xxl(){
+        left: 108px;
+    }
+    @include xl(){
+        left: 43px;
+        bottom: 20%;
+    }
+    @include lg() {
+        visibility: hidden;
+        opacity: 0;
+    }
+    @include md() {
+        visibility: hidden;
+        opacity: 0;
+    }
+    @include sm() {
+        visibility: hidden;
+        opacity: 0;
+    }
+    @include xs() {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 #banner .banner_slider .slick-dots li{
     line-height: 0;
@@ -125,13 +153,13 @@
 }
 /* =========== Banner Css End =========== */
 /* =========== Feature Category Css Start=========== */
-
 #feature{
     margin-top: 110px;
 }
 
 #feature .col-lg-5 .cream-img-2{
     margin-top: 24px;
+    margin-bottom: 20px;
 }
 #feature .col-lg-5 .cream-img-3{
     margin-left: 24px;
@@ -139,9 +167,21 @@
 
 .cream-img-1{
     position: relative;
+    @include md(){
+        width: 100%;
+    }
+}
+.cream-img-1 img{
+    width: 100%;
 }
 .cream-img-2{
     position: relative;
+    @include md(){
+        width: 100%;
+    }
+}
+.cream-img-2 img{
+    width: 100%;
 }
 .cream-img-3{
     position: relative;
@@ -152,20 +192,13 @@
     z-index: 97;
     text-align: center;
     color:$light-color;
-    width: 496px;
-    height: 260px;
-    left: 20px;
-    top: 20px;
-    padding-top: 94px;
+    inset: 20px;
     transition: .5s;
     transform: scale(0);
-}
-.col-lg-7 .overlay-beauty-cream{
-    padding-top: 260px;
-    width: 710px;
-    height: 591px;
-    left: 23px;
-    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .cream-img-1:hover .overlay-beauty-cream{
     transform: scale(1);
@@ -193,24 +226,21 @@
     font-weight: 600;
     line-height: 28px; 
     transition: .5s;
+    position: relative;
 }
 .overlay-beauty-cream a::before{
     content: '';
     position: absolute;
     width: 0%;
     height: 2px;
-    left: 40%;
-    bottom: 94px;
+    left: 0;
+    bottom: 0;
     background-color: $primary-color;
     transition: .5s;
 }
 .overlay-beauty-cream a:hover::before{
     width: 97px;
     
-}
-.col-lg-7 .overlay-beauty-cream a::before{
-    left: 43.5%;
-    bottom: 44%;
 }
 .overlay-beauty-cream h3:hover{
     color: $primary-color;
@@ -256,6 +286,15 @@
     height: 524px;
     background-size: cover !important;
     background-position: center !important;
+    @include md(){
+        height: 450px;
+    }
+    @include sm(){
+        height: 377px;
+    }
+    @include xs(){
+        height: 377px;
+    }
 
 }
 #best_spa .item h1{
@@ -265,6 +304,20 @@
     font-weight: 700;
     line-height: 46px;
     margin-top: 100px;
+    @include md(){
+        font-size: 33px;
+        margin-top: 80px;
+    }
+    @include sm(){
+        font-size: 33px;
+        margin-top: 65px;
+    }
+    @include xs(){
+        font-size: 30px;
+        margin-top: 65px;
+        text-align: center; 
+        text-align-last: center;
+    }
 }
 #best_spa .item p{
     color:$light-color;
@@ -274,6 +327,17 @@
     line-height: 28px; 
     margin-bottom: 60px;
     margin-top: 5px;
+    @include sm(){
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    @include xs(){
+        font-size: 16px;
+        margin-bottom: 40px;
+        text-align: center; 
+        text-align-last: center;
+    }
+    
 }
 #best_spa .item a{
     color:$light-color;
@@ -287,6 +351,13 @@
     padding: 17px 40px 17px 34px;
     cursor: pointer;
     transition: .5s;
+    @include sm(){
+        padding: 17px 25px;
+    }
+    @include xs(){
+        margin-left: 34%;
+
+    }
 }
 #best_spa .item a:hover{
     background-color: $primary-color;
@@ -331,6 +402,11 @@
     .product{
         @include product();
         margin-bottom: 24px;
+        .product_img{
+            img{
+                width: 100%;
+            }
+        }
     }
     .as_btn {
         margin-top: 40px;
@@ -362,7 +438,20 @@
     margin: 100px 0;
     .section_heading{
         margin-bottom: 82px;
+        @include lg (){
+            margin-bottom: 50px;
+        }
+        @include md (){
+            margin-bottom: 50px;
+        }
+        @include sm (){
+            margin-bottom: 40px;
+        }
+        @include xs (){
+            margin-bottom: 40px;
+        }
     }
+    
     .deals_countdown{
         position: absolute;
         background-color: $light-color;
@@ -372,6 +461,26 @@
         z-index: 99;
         top: 110px;
         left: 34%;
+        @include lg(){
+            left: 29%;
+            top: 80px;
+        }
+        @include md(){
+            left: 21%;
+            top: 85px;
+            padding: 0px 50px;
+        }
+        @include sm(){
+            left: 21%;
+            top: 75px;
+            padding: 0px 25px;
+        }
+        @include xs(){
+            max-width: 424px;
+            left: 79px;
+            top: 75px;
+            padding: 0px 49px;
+        }
         div{
             h4{
                 color: $text-color;
@@ -398,8 +507,6 @@
     .deals_slider{
         background-color: $light-color;
         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
-        height: 646px;
-        width: 1320px;
         top: -50%;
 
         .deals_slider_item{
@@ -408,6 +515,9 @@
             background-size: cover !important;
             background-position: center !important;
             margin: 75px 38px 86px 39px;
+            @include md (){
+                height: 385px;
+            }
             .deals_content{
                 margin-top: 35px;
                 margin-left: 40px;
@@ -425,6 +535,9 @@
                     font-weight: 700;
                     line-height: 46px;
                     margin: 10px 0 16px 0;
+                    @include lg(){
+                        font-size: 24px;
+                    }
                 }
                 p{
                     color: $paragraph-color;
@@ -471,9 +584,8 @@
         }
         .slick-dots {
             display: flex;
-            position: absolute;
-            bottom: 40px;
-            left: 48%;
+            justify-content: center;
+            transform: translateY(-40px);
             li {
                 line-height: 0;
                 margin-right: 5px;
@@ -481,7 +593,7 @@
                 button{
                     font-size: 0;
                     border: none;
-                    background: var(--Gray-4, #BDBDBD);
+                    background:  #BDBDBD;
                     width: 10px;
                     height: 6px;
                     border-radius: 5px;
@@ -543,15 +655,109 @@
 }
 /* Mega Hover css*/
 /* =========== Deals Css End =========== */
+/* ===========  Beauty Inspired Scss Start=========== */
+ #beauty{
+    position: relative;
+    background-color: $bg-color-dark;
+    margin-bottom: 112px;
+    .beauty_info{
+        h5{
+            color: $paragraph-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            margin: 70px 0 10px 0;
+        }
+        h2{
+            color: $text-color ;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 46px;
+        }
+        p{
+            color: $paragraph-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; 
+            margin: 16px 0 30px 0;
+        }
+        a{
+            display: inline-block;
+            color: $light-color;
+            text-align: center;
+            font-family: $primary-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            background-color: $primary-color;
+            padding: 14px 23px;
+            margin-bottom: 50px;
+            transition: .4s;
+            &:hover{
+                background-color: $primary-color-3d;
+            }
+        }
+    }
+    .beauty_vedio{
+        .beauty_img{
+            position: absolute; 
+            width: 50%;
+            height: 100%;
+            top: 0; 
+            right: 0;
+            img{
+                object-fit: cover;
+                object-position: center;
+                height: 100%; 
+                width: 100%;
+            }
+            @include lg{
+                position: relative;
+                width: 100%;
+            }
+            @include md{
+                position: relative;
+                width: 100%;
+            }
+            @include sm{
+                position: relative;
+                width: 100%;
+            }
+        }
+        a{
+            position: absolute;
+            left: 46%;
+            top: 43%;
+            color: $primary-color;
+            width: 80px;
+            height: 80px;
+            line-height: 85px;
+            background-color: $light-color;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 25px;
+            transition: .4s;
+            &:hover{
+                background-color: $primary-color;
+                color: $light-color;
+            }
+        }
+    }
+ }
+/* ===========  Beauty Inspired Scss Ended=========== */
 /* =========== Latest News Css start =========== */
 #latest{
     margin-bottom: 100px;
     .latest_slider{
         .slick-dots {
             display: flex;
-            position: absolute;
-            bottom: -35px;
-            left: 46%;
+            justify-content: center;
+            transform: translateY(40px);
             li {
                 line-height: 0;
                 margin-right: 5px;
@@ -576,11 +782,41 @@
         background: $light-color;
         box-shadow: $shadow-30;
         padding: 0;
+        .cart_img{
+            @include sm(){
+                max-width: 476px;
+                max-height: 350px;
+                }
+            @include xs(){
+                max-height: 376;
+                max-width: 512px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px 0 5px 5px;
+            }
+        }
         img{
             margin: 20px;
+            @include sm(){
+                height:100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px 0 5px 5px;
+            }
+            @include xs(){
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 5px 0 5px 5px;
+            }
         }
         .cart_info{
             margin-left: 20px;
+            @include xs(){
+                margin-top: 20px;
+            }
             h5{
                 color: $text-color;
                 font-family: $primary-font;
@@ -602,6 +838,9 @@
 
         }
         .cart_footer{
+            @include xs(){
+                margin-top: 20px;
+            }
             a{
                 color: $paragraph-color;
                 font-family: $primary-font;
@@ -610,6 +849,9 @@
                 line-height: 28px;
                 margin: 4px 0 20px 20px;
                 transition: .4s;
+                &:hover {
+                    color: $primary-color;
+                }
                 i{
                     margin-left: 5px;
                 }
@@ -622,46 +864,23 @@
                 line-height: 28px;
                 margin: 4px 0 20px 71px;
                 transition: .4s;
+                &:hover {
+                    color: $primary-color;
+                }
+                @include md(){
+                    margin: 4px 0 20px 90px;
+                    
+                }
+                @include sm(){
+                    margin: 4px 0 20px 50%;
+                    
+                }
+                @include xs(){
+                    margin: 4px 0 20px 56%;
+                    
+                }
             }
-            &:hover a{
-                color: $primary-color;
-            }
-            &:hover a:last-child{
-                color: $primary-color;
-            }
-
         }
     }
 }
 /* =========== Latest News Css End =========== */
-
-// footer {
-//     .feature-box {
-//         background-color: $light-color;
-//         box-shadow: $shadow-50;
-//         .icon{
-//             background-color: $primary-color;
-//             border: none;
-//             border-radius: 50%;
-//             width: 70px;
-//             height: 70px;
-//             line-height: 70px;
-//             text-align: center;
-//             margin-right: 10px;
-//         }
-//         .box{
-//             padding: 15px 40px;
-//             border-right: 4px solid rgba(241, 241, 241, 1);
-//             height: 100px;
-        
-//         } 
-        
-//     }
-// }
- 
-
-
-
-
-
-

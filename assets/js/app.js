@@ -14,16 +14,52 @@ $(function() {
         dots:true,
         fade:true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
     });
     // Banner slider js ended
     // New Product slider js start
     $('.new_product_slider').slick({
         slidesToShow: 4,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 3000,
         prevArrow: '<i class="fa-solid fa-chevron-left new_product_slider_arrow"><i>',
         nextArrow: '<i class="fa-solid fa-chevron-right new_product_slider_arrow"><i>',
+        responsive: [
+             {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+                
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                
+              }
+            },
+            {
+              breakpoint: 430,
+              settings: {
+                slidesToShow: 1,
+                
+              }
+            }
+        ]
     });
 
     // Countdown Activation
@@ -43,12 +79,40 @@ $(function() {
         arrows:false,
         dots:true,
         slidesToShow: 2,
+        responsive: [
+            {
+                breakpoint:1200,
+                settings:{
+                    slidesToShow:1,
+                }
+            }
+        ]
     })
     // Latest News Slider
     $('.latest_slider').slick({
         arrows:false,
         dots: true,
         slidesToShow:4,
+        responsive: [
+            {
+                breakpoint:1200,
+                settings:{
+                    slidesToShow:3,
+                }
+            },
+            {
+                breakpoint:992,
+                settings:{
+                    slidesToShow:2,
+                }
+            },
+            {
+                breakpoint:768,
+                settings:{
+                    slidesToShow:1,
+                }
+            }
+        ]
     })
 
     // BackToTop Button
@@ -65,6 +129,20 @@ $(function() {
         $('html, body').animate({
             scrollTop:0
         }, 200)
+    })
+    // About Page js start
+    // Team slider js
+    $('.team_slider').slick({
+        slidesToShow: 4,
+        prevArrow: '<i class="fa-solid fa-caret-left team_slider_arrow"></i>',
+        nextArrow: '<i class="fa-solid fa-caret-right team_slider_arrow"></i>',
+    })
+
+    // Instragram slider js
+    $('.insta_slider').slick({
+        slidesToShow:6,
+        arrows:false,
+        dots:true,
     })
     
 });

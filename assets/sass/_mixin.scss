@@ -100,31 +100,33 @@
         
 }
 
-
-/* =========== Product Mixin Ended =========== */
-// @mixin deals(){
-//     .deals_slider{
-//         width: 1320px;
-//         height: 646px;
-//         background: #CACACA;
-//         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
-//     }
-    
-    
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
+@mixin page_heading(){
+    opacity: 0.7;
+    background: $text-color;
+    height: 400px;
+    .container{
+        h2{
+            flex-direction: column;
+            justify-content: center;
+            color: $light-color;
+            font-family: $primary-font ;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 58px; 
+            margin-top: 148px;
+        }
+        p{
+            color: $light-color;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; 
+            margin-top: 14px;
+        }
+    }
+}
 
 
 /* =========== Extra Extra Large Device Start =========== */
